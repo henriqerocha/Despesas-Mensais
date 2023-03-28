@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Calculo de despesas mensais" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Despesas</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top">
+          <div class="title-top">
+            <h3>Despesas</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+
+  <main>
+    <div class="container">
+      <div class="entrada-dados">
+        <fieldset>
+          <legend>Cálculo de despesas mensais</legend>
+          <div class="buttons-input">
+            <button onclick="criarCaixaDeTexto()" class="proventos">
+              <span> &#43;</span> Proventos
+            </button>
+
+            <button onclick="criarCaixaDeTexto()" class="despesas">
+              <span> &#43;</span> Despesas
+            </button>
+          </div>
+          <div class="input-box">
+            <div id="area-calculo">
+              <div id="descricao">
+                <h3>Descrição</h3>
+              </div>
+              <div id="valor">
+                <h3>Valor</h3>
+              </div>
+            </div>
+          </div>
+
+          <button class="calcular">Calcular</button>
+        </fieldset>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</html>
