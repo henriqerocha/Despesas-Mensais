@@ -1,15 +1,15 @@
 function criarCaixaProventos() {
     // cria o elemento de entrada de texto
     var caixaDescricao = document.createElement("input");
-    caixaDescricao.style.backgroundColor = '#d2ffd2';
+    caixaDescricao.style.backgroundColor = '#94df94';
     caixaDescricao.type = "text";
     caixaDescricao.id = "meu-texto";
     caixaDescricao.name = "descricao";
 
     var caixaValor = document.createElement("input");
-    caixaValor.style.backgroundColor = '#d2ffd2';
+    caixaValor.style.backgroundColor = '#94df94';
     caixaValor.type = "number";
-    caixaValor.id = "meu-texto";
+    caixaValor.id = "valorProventos";
     caixaValor.name = "descricao";
 
 
@@ -25,15 +25,15 @@ function criarCaixaProventos() {
   function criarCaixaDespesas() {
     // cria o elemento de entrada de texto
     var caixaDescricao = document.createElement("input");
-    caixaDescricao.style.backgroundColor = '#ffd2d2';
+    caixaDescricao.style.backgroundColor = '#cc8383';
     caixaDescricao.type = "text";
     caixaDescricao.id = "meu-texto";
     caixaDescricao.name = "descricao";
 
     var caixaValor = document.createElement("input");
-    caixaValor.style.backgroundColor = '#ffd2d2';
+    caixaValor.style.backgroundColor = '#cc8383';
     caixaValor.type = "number";
-    caixaValor.id = "meu-texto";
+    caixaValor.id = "valorDespesas";
     caixaValor.name = "descricao";
 
 
