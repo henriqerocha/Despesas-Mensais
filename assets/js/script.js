@@ -1,3 +1,6 @@
+
+//Função Proventos
+
 function criarCaixaProventos() {
     // cria o elemento de entrada de texto
     var caixaDescricao = document.createElement("input");
@@ -21,6 +24,9 @@ function criarCaixaProventos() {
     var div = document.getElementById("valor");
     div.appendChild(caixaValor);
   }
+
+
+  //Função Despesas
 
   function criarCaixaDespesas() {
     // cria o elemento de entrada de texto
