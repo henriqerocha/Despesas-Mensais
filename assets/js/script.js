@@ -12,7 +12,7 @@ function criarCaixaProventos() {
     var caixaValor = document.createElement("input");
     caixaValor.style.backgroundColor = '#94df94';
     caixaValor.type = "number";
-    caixaValor.id = "valorProventos";
+    caixaValor.className = "valorProventos";
     caixaValor.name = "descricao";
 
 
@@ -39,7 +39,7 @@ function criarCaixaProventos() {
     var caixaValor = document.createElement("input");
     caixaValor.style.backgroundColor = '#cc8383';
     caixaValor.type = "number";
-    caixaValor.id = "valorDespesas";
+    caixaValor.className = "valorDespesas";
     caixaValor.name = "descricao";
 
 
@@ -54,13 +54,13 @@ function criarCaixaProventos() {
 
   function calcular(){
     //Calcula os valores de proventos e despesas
-    var inputsProventos = document.querySelectorAll("input[id='valorProventos']");
+    var inputsProventos = document.querySelectorAll("input[class='valorProventos']");
     var totalProventos = 0;
-    var inputsDespesas = document.querySelectorAll("input[id='valorDespesas']");
+    var inputsDespesas = document.querySelectorAll("input[class='valorDespesas']");
     var totalDespesas = 0;
     var total = 0;
     
-    for(var i=0; i<inputsDespesas.length; i++){
+    for(var i=0; i<inputsDespesas.length - 1; i++){
       totalProventos = totalProventos + parseFloat(inputsProventos[i].value);
       totalDespesas = totalDespesas + parseFloat(inputsDespesas[i].value);
       total = totalProventos - totalDespesas;
