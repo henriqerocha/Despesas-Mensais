@@ -135,7 +135,7 @@ legend{
 
 
 
-.calcular{
+#calcular{
     width: 100%;
     padding: 15px;
     border-radius: 5px;
@@ -147,7 +147,7 @@ legend{
     color: #000;
     border: none;
 }
-.calcular:hover{
+#calcular:hover{
     background-color: #ffc72d;
 }
 
