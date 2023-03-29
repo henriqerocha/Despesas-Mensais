@@ -138,8 +138,8 @@ legend{
     margin: 40px 0;
     cursor: pointer;
     background-color: #ffbc05;
-    border: 1px solid #000;
     color: #000;
+    border: none;
 }
 .calcular:hover{
     background-color: #ffc72d;
