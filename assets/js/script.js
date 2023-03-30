@@ -56,8 +56,8 @@ function criarCaixaProventos() {
     //Calcula os valores de proventos e despesas
     var totalProventos = 0;
     var totalDespesas = 0;
-    var inputsProventos = document.getElementsByClassName("valorProventos");
-    var inputsDespesas = document.getElementsByClassName("valorDespesas");
+    var inputsProventos = document.querySelectorAll("input[class='valorProventos']");
+    var inputsDespesas = document.querySelectorAll("input[class='valorDespesas']");
     var total = 0;
     
     for(var i=0; i<inputsDespesas.length; i++){
