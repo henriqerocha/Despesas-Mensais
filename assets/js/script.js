@@ -54,19 +54,22 @@ function criarCaixaProventos() {
 
   function calcular(){
     //Calcula os valores de proventos e despesas
-    var inputsProventos = document.querySelectorAll("input[class='valorProventos']");
     var totalProventos = 0;
-    var inputsDespesas = document.querySelectorAll("input[class='valorDespesas']");
     var totalDespesas = 0;
+    var inputsProventos = document.getElementsByClassName("valorProventos");
+    var inputsDespesas = document.getElementsByClassName("valorDespesas");
     var total = 0;
     
-    for(var i=0; i<inputsDespesas.length - 1; i++){
-      totalProventos = totalProventos + parseFloat(inputsProventos[i].value);
-      totalDespesas = totalDespesas + parseFloat(inputsDespesas[i].value);
-      total = totalProventos - totalDespesas;
+    for(var i=0; i<inputsDespesas.length; i++){
+      totalDespesas -= parseFloat(inputsDespesas[i].value);
+    }
 
+    for(var i=0; i<inputsProventos.length; i++){
+      totalProventos += parseFloat(inputsProventos[i].value);
     }
     
+    total = totalDespesas + totalProventos;
+
     alert("O total é: " + total);
   
 
