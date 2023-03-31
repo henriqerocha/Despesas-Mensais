@@ -47,6 +47,8 @@ fieldset{
     margin-top: 50px;
     border: 3px solid rgb(76, 32, 117);
     border-radius: 15px;
+    overflow-y: auto;
+    height: 500px;
     
 }
 legend{
@@ -101,7 +103,7 @@ legend{
 }
 
 #descricao{
-    width: 70%;
+    width: 80%;
     margin-right: 10px;
 }
 #descricao input{
@@ -112,9 +114,11 @@ legend{
     border-radius: 3px;
     padding: 10px;
     border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .9em;
 }
 #valor{
-    width: 30%;
+    width: 20%;
 }
 #valor input{
     background-color: #cc8383;
@@ -149,6 +153,30 @@ legend{
 }
 #calcular:hover{
     background-color: #ffc72d;
+}
+
+
+.calcula-resultado{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.calcula-resultado span{
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4C2075;
+}
+.calcula-resultado #resultado-calculo{
+    margin-left: 5px;
+    font-size: 1.5em;
+    background-color: #ffbc05;
+    color: #000;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 footer{

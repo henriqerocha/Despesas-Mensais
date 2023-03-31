@@ -16,13 +16,14 @@ function criarCaixaProventos() {
     caixaValor.name = "descricao";
 
 
-
     // adiciona a caixa de texto à div
     var div = document.getElementById("descricao");
     div.appendChild(caixaDescricao);
 
     var div = document.getElementById("valor");
     div.appendChild(caixaValor);
+
+
   }
 
 
@@ -41,6 +42,7 @@ function criarCaixaProventos() {
     caixaValor.type = "number";
     caixaValor.className = "valorDespesas";
     caixaValor.name = "descricao";
+  
 
 
 
@@ -70,9 +72,18 @@ function criarCaixaProventos() {
     
     total = totalDespesas + totalProventos;
 
-    alert("O total é: " + total);
-  
 
+
+    // Seleciona o elemento de entrada pelo ID
+    var span = document.getElementById("resultado-calculo");
     
+    // Chama a função para calcular o resultado
+    var resultado = total;
+    
+    // Define o valor do elemento de entrada para o resultado
+    span.innerHTML = resultado;
 
+    return total;
   }
+
+ 
