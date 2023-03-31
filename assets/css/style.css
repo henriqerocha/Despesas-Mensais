@@ -49,7 +49,6 @@ fieldset{
     margin-top: 50px;
     border: 3px solid rgb(76, 32, 117);
     border-radius: 15px;
-    overflow-y: auto;
     height: 500px;
     
 }
@@ -66,6 +65,17 @@ legend{
 .input-box{
     display: flex;
     flex-direction: column;
+    height: 300px;
+    overflow-y: auto;
+}
+.input-box::-webkit-scrollbar {
+    width: 10px;
+    background-color: #bf81f8;
+  }
+.input-box::-webkit-scrollbar-thumb {
+  background-color: rgb(76, 32, 117);
+  border-radius: 20px;
+  height: ;
 }
 #area-calculo{
     display: flex;
@@ -120,7 +130,7 @@ legend{
     font-size: .9em;
 }
 #valor{
-    width: 20%;
+    width: 15%;
 }
 #valor input{
     background-color: #cc8383;
