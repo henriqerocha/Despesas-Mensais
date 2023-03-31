@@ -22,38 +22,42 @@
 
   <main>
     <div class="container">
-      <div class="entrada-dados">
-        <fieldset>
-          <legend>Cálculo de despesas mensais</legend>
-          <div class="buttons-input">
-            <button onclick="criarCaixaProventos()" class="proventos">
-              <span> &#43;</span> Proventos
-            </button>
+      <div class="container-dados">
+        <div class="entrada-dados">
+          <fieldset>
+            <legend>Cálculo de despesas mensais</legend>
+            <div class="buttons-input">
+              <button onclick="criarCaixaProventos()" class="proventos">
+                <span> &#43;</span> Proventos
+              </button>
 
-            <button onclick="criarCaixaDespesas()" class="despesas">
-              <span> &#8722;</span> Despesas
-            </button>
-          </div>
-          <div class="input-box">
-            <div id="area-calculo">
-              <div id="descricao">
-                <h3>Descrição:</h3>
-              </div>
-              <div id="valor">
-                <h3>Valor R$:</h3>
+              <button onclick="criarCaixaDespesas()" class="despesas">
+                <span> &#8722;</span> Despesas
+              </button>
+            </div>
+            <div class="input-box">
+              <div id="area-calculo">
+                <div id="descricao">
+                  <h3>Descrição:</h3>
+                </div>
+                <div id="valor">
+                  <h3>Valor R$:</h3>
+                </div>
               </div>
             </div>
-          </div>
 
+            <input type="hidden" id="totalProventos" value="0" />
+            <input type="hidden" id="totalDespesas" value="0" />
+          </fieldset>
+        </div>
+
+        <div class="calcula-resultado">
           <button onclick="calcular()" id="calcular">Calcular</button>
-          <input type="hidden" id="totalProventos" value="0" />
-          <input type="hidden" id="totalDespesas" value="0" />
-        </fieldset>
-      </div>
-
-      <div class="calcula-resultado">
-        <span>O total de despesas é: R$ </span>
-        <span id="resultado-calculo"></span>
+          <div class="spans-resultado">
+            <span>O total de despesas é: R$ </span>
+            <span id="resultado-calculo"></span>
+          </div>
+        </div>
       </div>
     </div>
   </main>
