@@ -86,4 +86,20 @@ function criarCaixaProventos() {
     return total;
   }
 
+  function gerarPDF (){
+    //instanciar o jsPDF
+    var docPDF = new jsPDF();
+
+    //Conteúdo HTML que deve estar no PDF
+    var inputText = document.querySelectorAll("input[class='meu-texto']").value;
+    var inputNumber = document.querySelector("input[type='number']").value;
+    
+
+    docPDF.text(inputText, 10, 10);
+    docPDF.text(inputNumber, 100, 10);
+
+
+    docPDF.save('documento.pdf');
+
+  }
  
