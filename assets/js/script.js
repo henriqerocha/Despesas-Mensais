@@ -91,7 +91,7 @@ function criarCaixaProventos() {
     var docPDF = new jsPDF();
 
     //Conteúdo HTML que deve estar no PDF
-    var inputText = document.querySelectorAll("input[class='meu-texto']").value;
+    var inputText = document.querySelector("input[class='meu-texto']").value;
     var inputNumber = document.querySelector("input[type='number']").value;
     
 
