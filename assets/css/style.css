@@ -16,7 +16,7 @@ body{
 }
 main{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.8) 29%, rgba(133,54,124,0.8) 92%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 29%, rgba(133,54,124,0.8) 92%);
     height: 75vh;
 }
 header{
