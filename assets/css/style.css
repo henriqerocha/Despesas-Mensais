@@ -220,10 +220,11 @@ legend{
 }
 .calcula-resultado span{
     font-size: 1.5rem;
-    padding: 15px;
+    padding: 12px;
+    border-radius: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #fff;
-    background-color: rgba(133,54,124,0.7);
+    background-color: rgba(133,54,124,0.5);
 }
 #resultado-calculo{
     background-color: transparent;
