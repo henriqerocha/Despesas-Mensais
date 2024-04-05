@@ -1,3 +1,18 @@
+const anoAtual = document.querySelector('#ano-atual');
+const data = new Date();
+const buttonCalcular = document.querySelector('#calcular');
+const totProv = document.querySelector('.valorProventos');
+
+anoAtual.innerHTML = data.getFullYear();
+
+function calculaEnter(event){
+  if(event.key === "Enter"){
+    calcular();
+    console.log('calculando...');
+  }
+}
+
+
 
 //Função Proventos
 
@@ -103,3 +118,4 @@ function criarCaixaProventos() {
 
   }
  
+totProv.addEventListener('keyup', calculaEnter);
